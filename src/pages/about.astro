@@ -1,0 +1,125 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
+				<center><img align="center"
+					width="400"
+					height="400"
+					src="/assets/at-work.png"
+					alt="Rajan Gupta | Wordpress Developer"
+				/></center>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+						Rajan Gupta is an experienced WordPress Developer with over 6 years of expertise in WordPress Theme Development, WooCommerce Development, Web Accessibility, Customization, and Plugin Development. He has a strong understanding of front-end technologies such as HTML5, Bootstrap, Tailwind CSS, and JavaScript, along with experience in working with various tools and frameworks like Sage, Bedrock, Laravel Template, WP Twig, Vue, and React.js. Rajan has a proven track record of building and maintaining WordPress sites, integrating plugins, and handling multiple projects simultaneously. He is well-versed in modern WordPress development practices and has a deep understanding of accessibility standards (ADA Compliance). Rajan has a passion for web development and strives to deliver high-quality and responsive websites.
+
+					</p>
+					&nbsp;
+					<h4>Top Achievements:</h4>
+					<ol>
+						<li><b>WordPress Theme Customization and Development:</b><br />
+							Rajan specializes in WordPress theme customization and development. He has successfully delivered projects involving WordPress theme customization, bug fixing, maintenance, PSD to WordPress conversion, HTML to WordPress theme conversion, and WordPress child theme development. His ability to convert comprehensive layouts and wireframes into working HTML pages showcases his expertise in translating design concepts into functional websites.
+
+						</li>
+						<li><b>WooCommerce Development and E-commerce Expertise:</b><br />With his proficiency in WooCommerce, Rajan has contributed to the development of e-commerce websites. He has designed and developed responsive e-commerce websites, implemented new features and functionality, and ensured high performance and availability of the CMS. His skills in integrating WooCommerce plugins and managing the back-end of e-commerce websites demonstrate his ability to create effective online shopping experiences.</li>
+						<li><b>ADA Compliance and Accessibility Expertise:</b><br />Rajan has extensive experience in performing audits and ensuring compliance with accessibility standards, including WCAG (Conformance Levels: A, AA, AAA) and ADA - Section 508 of the Rehabilitation Act. He has a profound understanding of accessibility requirements and has implemented accessibility solutions in various projects, making websites more inclusive and user-friendly.</li>
+					</ol>
+					<p>Overall, Rajan Gupta has a strong background in WordPress development, with a focus on theme customization, accessibility, and WooCommerce development. His expertise in building user-friendly and accessible websites, along with his technical skills and project management abilities, makes him a valuable asset in the field of WordPress development.</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+					<p>Bachelor of Science Information Technology</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<p> - Modern WordPress Theme Development using as like Sage, Bedrock, laravel Template, WP Twig</p>
+					<p> - Good understanding of front-end technologies, including HTML5, BOOTSTRAP,TAILWINDCSS, RESPONSIVE, Foundation, JavaScript, jQuery, Vue, SASS, Composer,NPM, Vue and Reactjs etc.</p>
+					<p> - Minifying HTML, CSS, JS e.t.c </p>
+					<p> - Familiar with accessibility standards (ADA Compliance)</p>
+					<p> - Experience designing and developing responsive design websites</p>
+					<p> - Comfortable working with debugging tools like Firebug, Chrome Inspector, etc.</p>
+					<p> - Ability to convert comprehensive layouts and wireframes into working HTML pages</p>
+					<p> - Knowledge of how to interact with RESTful APIs and formats (JSON, XML)</p>
+					<p> - Proficient understanding of code versioning tools Git</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
