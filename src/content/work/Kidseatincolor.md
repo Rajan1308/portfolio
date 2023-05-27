@@ -1,7 +1,7 @@
 ---
 title: Kidseatincolor
 publishDate: 2019-12-01 00:00:00
-img: /assets/stock-3.png
+img: https://rajan1308.github.io/portfolio/assets/stock-3.png
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
 description: |
   Our client, an education technology company, sought to create a comprehensive e-learning platform that would provide a seamless and engaging learning experience for their users. To achieve their goals, they partnered with our development team to leverage a combination of cutting-edge technologies, including Dev, Backend, Timber, WooCommerce, Storybook, and LMS integration.

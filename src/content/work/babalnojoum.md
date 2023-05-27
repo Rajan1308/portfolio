@@ -1,7 +1,7 @@
 ---
 title: Babalnojoum
 publishDate: 2020-03-02 00:00:00
-img: /assets/bablnojum.png
+img: https://rajan1308.github.io/portfolio/assets/bablnojum.png
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
   We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
